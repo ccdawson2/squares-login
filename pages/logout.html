@@ -1,0 +1,32 @@
+<div class="well">
+  <body onload="showPrompt($event)">
+	<h1>{{message}}</h1>
+	
+    <form name="logoutForm">
+        <fieldset>
+            <div class="form-group">
+                <div class="pull-right">
+                    <a class="btn btn-default" href="#"><i class="fa fa-thumbs-down"></i> Cancel</a>
+
+                    <button class="btn btn-primary" ng-click="logout()" ng-disabled="logoutForm.$invalid"><i class="fa fa-thumbs-up"></i> Submit</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+  </body>
+
+<!--
+<modal id="custom-modal-1">
+    <div class="modal">
+        <div class="modal-body">
+            <h1>A Custom Modal!</h1>
+            <p>
+                Home page text: <input type="text" ng-model="vm.bodyText" />
+            </p>
+            <button ng-click="vm.closeModal('custom-modal-1');">Close</button>
+        </div>
+    </div>
+    <div class="modal-background"></div>
+</modal>
+-->
+</div>

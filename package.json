@@ -1,0 +1,15 @@
+{
+  "name": "squares-login",
+  "version": "1.0.0",
+  "description": "Client for squares API's",
+  "main": "server.js",
+  "author": "ccdawson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "devDependencies": {}
+}

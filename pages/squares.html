@@ -1,0 +1,30 @@
+<div class="well">
+    <div class="jumbotron text-center">
+
+        <p>{{message}}</p>
+		
+        <table class="table table-bordered table-hover table-striped table-list">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Description</th>
+                    <th>Short Desc</th>
+                    <th>X Coord</th>
+                    <th>Y Coord</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+		
+            <tbody>		
+	    	    <tr ng-repeat="square in squares" ng-click="view(square.squareId)">
+                    <td>{{square.squareId}}</td>
+                    <td>{{square.desc}}</td>
+                    <td>{{square.shortDesc}}</td>
+                    <td>{{square.xCoord}}</td>
+                    <td>{{square.yCoord}}</td>
+                    <td>{{square.image}}</td>
+                </tr>
+            </tbody>	
+        </table>		
+    </div>
+</div>

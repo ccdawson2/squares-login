@@ -1,0 +1,20 @@
+<div class="well">
+    
+	<h1>{{message}}</h1>
+	
+    <form name="loginForm">
+        <fieldset>
+            <div class="form-group">
+                <input name="name" class="form-control" placeholder="User Name" ng-model="name" required>
+                <span ng-show="loginForm.firstName.$dirty && loginForm.firstName.$error.required">You must enter a value here</span> 
+				<input class="form-control" placeholder="Password" ng-model="password" type="password" required>
+            </div>
+            <div class="form-group">
+                <div class="pull-right">
+                    <a class="btn btn-default" href="#"><i class="fa fa-thumbs-down"></i> Cancel</a>
+                    <button class="btn btn-primary" ng-click="validateUser()" ng-disabled="loginForm.$invalid"><i class="fa fa-thumbs-up"></i> Submit</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
